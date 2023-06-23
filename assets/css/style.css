@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2.5px solid black;
+    padding: 10px 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header .btn {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 2.5px solid black;
+}
+
+/* Good Shoes */
+
+main {
+    padding: 1rem 3rem;
+    background-color: #FFBE2F;
+    border: 2.5px solid black;
+    border-top: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.good-shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-deskription {
+    flex: 1;
+}
+
+.content-img {
+    flex: 1;
+}
+
+.good-shoes h1 {
+    /* margin-block: 2rem;
+    margin-block-start: 3rem; */
+}
+
+.good-shoes p {
+    font-size: 1rem;
+    margin-block-end: 2rem;
+}
+
+.good-shoes .content-deskription .btn {
+    margin-top: 1rem;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    /* border: 2.5px solid black; */
+    box-shadow: 3px 3px 1px #000000c0;
+}
+
+.good-shoes .content-img img {
+    max-width: 700px;
+    transform: rotate(-10deg);
+}
+
+/* brand */
+
+.brand {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    padding: 2rem 0;
+    overflow: hidden;
+    border: 2.5px solid black;
+    border-top: 0;
+}
+
+.brand img {
+    width: 5rem;
+}
+
+.brand img:first-child {
+    width: 6rem;
+}
+
+/* About US */
+
+.about-us {
+    padding: 0 3rem;
+    height: 90vh;
+    background-color: #8DB4AD;
+    border: 2.5px solid black;
+    border-top: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.about-us .content-deskription h1 {
+    padding-top: 5rem;
+}
+
+.about-us .content-deskription p {
+    padding-top: 3rem;
+}
+
+.about-us .content-deskription .btn {
+    margin-top: 1rem;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    /* border: 2.5px solid black; */
+    box-shadow: 3px 3px 1px #000000c0;
+    line-height: 100px;
+}
+
+/* Product */
+
+.product {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    background-color: #ED6335;
+    border: 2.5px solid black;
+    border-top: 0;
+}
+
+.product h1 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.product .box-btn {
+    text-align: end;
+}
+
+.product .btn {
+    margin-top: 1rem;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    /* border: 2.5px solid black; */
+    box-shadow: 3px 3px 1px #000000c0;
+    line-height: 100px;
+}
+
+.product .box-product {
+    display: flex;
+    gap: 0 3rem;
+
+}
+
+.product .box-product .card {
+    background-color: whitesmoke;
+    padding: .5rem .5rem;
+}
+
+.product .box-product .card img {
+    height: 220px;
+}
+
+.product .box-product .card h1 {
+    text-align: start;
+    font-size: 2rem;
+}
+
+.product .box-product .card p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Fllow Us */
+
+.follow-us {
+    background-color: #ECAE7D;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    height: 50vh;
+    border: 2.5px solid black;
+    border-top: 0;
+}
+
+.follow-us p {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}
+
+.follow-us .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0 3rem;
+    padding-top: 2rem;
+}
+
+.follow-us .social-media img {
+    height: 100px;
+}
+
+/* footer */
+
+footer {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Rensponsive */
+
+@media screen and (max-width:1210px) {
+    .good-shoes .content-img img {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width:1059px) {
+    .good-shoes .content-img img {
+        max-width: 480px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .good-shoes {
+        padding-bottom: 1.5rem;
+    }
+
+    .good-shoes .content-deskription {
+        order: 2;
+        text-align: center;
+    }
+
+    .good-shoes .content-img {
+        order: 1;
+    }
+}
